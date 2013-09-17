@@ -26,7 +26,7 @@ public class AlphabetJuzzleBoard extends AbstractJuzzleBoard<LowercaseTrieVocabu
 		alphabetBoard = new byte[r][c];
 		for (int i = 0; i < r; i++) {
 			for (int j = 0; j < c; j++) {
-				int k = i * j + j;
+				int k = i * c + j;
 				alphabetBoard[i][j] = LOWERCASE.getIndex(letters[k]);
 			}
 		}
